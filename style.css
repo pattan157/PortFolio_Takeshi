@@ -1,5 +1,5 @@
 /* それぞれのページサイズ */
-main, #made_site, main, #fuature, #about, #skill {
+main, #made_site, #about, #skill {
     height: 100vh;
 }
 
@@ -17,7 +17,7 @@ ul{
     justify-content: space-around;
     align-items: center;
 }
-.menu ul li{
+#menu ul li{
     font-size: 20px;
 }
 a{
@@ -46,6 +46,17 @@ p{
     font-size: large;
     letter-spacing: 0.1em;
 }
+.folder{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding : 50px ;
+}
+
+.folder>img{
+    width: 400px;
+    height: auto;
+}
     /* main */
 main{
     display: flex;
@@ -71,9 +82,11 @@ h1{
 }
 
 main p{
+    position:absolute;
+    top:50px;
+    left:45%;
     font-family: 'Srisakdi', cursive;
-    font-size: x-large;
-    text-align: center;
+    font-size: 300%;
 }
     /* MADE SITE */
 #made_site{
@@ -96,30 +109,6 @@ main p{
     opacity: 0.6; 
     filter: brightness(110%);
 }
-
-    /* fuature */
-#fuature{
-    background-color: white;
-    height: 100vh;
-}
-.folder{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding : 50px ;
-}
-
-.folder>img{
-    width: 400px;
-    height: auto;
-}
-.explannation>.name_site{
-    font-size: xx-large;
-}
-.explannation>.tantou{
-    font-size: larger;
-}
-
     /* about */
 #about{
     background-color: white;
@@ -133,6 +122,7 @@ main p{
 #about>.folder>p{
     margin-left: 80px;
 }
+
 
     /* SKILL */
 #skill{
