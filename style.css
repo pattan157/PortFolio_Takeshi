@@ -119,11 +119,13 @@ main p{
     height: auto;
     border-radius: 50%;
 }
-#about>.folder>p{
+#about .folder p{
     margin-left: 80px;
+    line-height:1.8em;
 }
-
-
+#about>.anime>.title h3{
+    font-size:2vw;
+}
     /* SKILL */
 #skill{
     background-color: #f8f8f8;
