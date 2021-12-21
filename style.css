@@ -1,7 +1,5 @@
 /* それぞれのページサイズ */
-main, #made_site, #about, #skill {
-    height: 100vh;
-}
+
 
 /* header */
 header{
@@ -147,25 +145,47 @@ main p{
     height: 250px;
 }
 
-.skill_lv .JAVA .image img{
+.skill_lv .Java .image img{
     width: max-content;
     height: 250px;
+}
+.HTML5, .CSS3, .Java{
+    width:30%;
 }
 .image{
     display: flex;
     justify-content: center;
 }
-
+.HTML5, .CSS3, .Java, .SQL{
+    background-color:white;
+    margin:0px 20px;
+    font-weight:auto;
+}
+.skill_lv2{
+    display: flex;
+    align-items: center;
+}
+.skill_lv2 .SQL{
+    width:30%;
+    margin:30px;
+}
+.skill_lv2 .SQL .image img{
+    width: max-content;
+    height: 250px;
+}
+.skill_lv2 .extra{
+    text-align: left;
+}
     /* 星の場所・色つけ */
 .rate{
     display:flex;
 }
 
-.H_one, .H_two, .H_three, .C_one, .C_two, .C_three, .J_one, .J_two, .J_three{
+.H_one, .H_two, .H_three, .H_four, .H_five, .C_one, .C_two, .C_three, .C_four, .C_five, .J_one, .J_two, .J_three, .J_four, .Q_one, .Q_two, .Q_three, .Q_four {
     color: darkorange;
 } 
 
-/* contact部分 */
+/* contact */
 #contact{
     background-color: white;
 }
@@ -185,8 +205,38 @@ textarea{
     margin: 0 0 0 auto;
     vertical-align: bottom;
 }
-
-/* モバイル用ページ（レスポンシブ対応） */
+.follow-me {
+    list-style: none;
+    margin: 0 0 -8px;
+    overflow: hidden;
+    padding: 0;
+  }
+  .follow-me li {
+    float: left;
+    margin: 0 8px 8px 0;
+    padding: 0;
+  }
+  .follow-me li a::before {
+    -webkit-border-radius: 2px;
+    border-radius: 2px;
+    color: #fff;
+    display: inline-block;
+    font-family: FontAwesome;
+    font-size: 16px;
+    height: 44px; /* Button height */
+    line-height: 44px; /* Button height */
+    -webkit-transition: all .3s ease;
+    transition: all .3s ease;
+    text-align: center;
+    width: 44px; /* Button width */
+  }
+  .follow-me li a:hover::before {
+    opacity: 0.7;
+  }
+  .follow-me li a[href*="facebook.com"]::before       { background-color: #3b5998; content: "\f09a"; }
+  .follow-me li a[href*="twitter.com"]::before        { background-color: #55acee; content: "\f099"; }
+  .follow-me li a[href*="https://github.com/pattan157"]::before         { background-color: #181717; content: "\f09b"; }
+  /* モバイル用ページ（レスポンシブ対応） */
 @media screen and (max-width:780px){
     /* 初めのページ */
     #fuature, #about{
