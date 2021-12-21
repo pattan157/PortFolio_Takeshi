@@ -1,6 +1,3 @@
-/* それぞれのページサイズ */
-
-
 /* header */
 header{
     position: fixed;
@@ -25,7 +22,7 @@ a{
 a:hover{
     color: red;
 }
-#made_site, #fuature, #about, #skill{
+#made_site, #about, #skill{
     padding-top: 30px;
 }
     /* 全体共通設定事項*/
@@ -242,13 +239,12 @@ footer .main{
   .follow-me li a[href*="https://www.facebook.com/profile.php?id=100008076155163"]::before       { background-color: #3b5998; content: "\f09a"; }
   .follow-me li a[href*="https://twitter.com/xYMBUIP0Uykcu51"]::before        { background-color: #55acee; content: "\f099"; }
   .follow-me li a[href*="https://github.com/pattan157"]::before         { background-color: #181717; content: "\f09b"; }
+  
+  
   /* モバイル用ページ（レスポンシブ対応） */
-@media screen and (max-width:780px){
+@media screen and (max-width:600px){
     /* 初めのページ */
-    #fuature, #about{
-        height: 50vh;
-    }
-    main, #made_site, main{
+    #made_site, main{
         height: 100vh;
     }
     h1{
@@ -275,45 +271,35 @@ footer .main{
         text-align: center;
         font-size: 30px;
     }
-   
     .contents a p{
         font-size:smaller ;
     }
 
-    #made_site .folder .contents a img{
+    .contents a img{
         display:flex;
         width: 200px;
         height: 200px;
+        text-align: center;
     }
 
     .folder > .contents{
         text-align: center;
     }
-    /* fuature */
-    #fuature{
-        background-image: url(./IMG/IMG_1345.jpg);
-        background-size: contain;
-        color: white;
-        margin-top: 5px;
-    
-    }
-    .folder img{
-        width: 0%;
-        height: 0%;
-    }
-
     /* about */
     #about{
-        background-image: url(./IMG/TCQKVD607-U0183TDKWUA-4f427509f8fb-512.jpg);
-        color: white;
-        background-size: cover;
         background-color: white;
+        color: black;
+        background-size: cover;
         margin-top: 5px;
-        background-repeat: no-repeat;
     }
     #about .folder img{
-        width: 0px;
-        height: 0px;
+        width:  50%;
+        height: 50%;
+        margin-bottom: 20px;
+    }
+    #about .folder p{
+        width:100%;
+        margin:0;
     }
 
     /* SKILL */
@@ -322,24 +308,24 @@ footer .main{
         height: auto;
     }
     .skill_lv{
-        display: flex;
         flex-direction: column;
-        justify-content: center;
-        align-items: center;
+    }
+    .skill_lv2{
+        flex-direction: column;
     }
     #skill img{
         width: 80px;
         height: 100px;
     }
+    .skill_lv2 .SQL{
+        margin:0 0 20px 0;
+    }
+    .skill_lv .HTML5, .CSS3, .Java, .skill_lv2 .SQL{
+        width:100%;
+    }
 
     /* contact */
     #contact{
         background-color: #f8f8f8;
-    }
-    input{
-        display: flex;
-        flex-direction: column;
-        justify-content: end;
-        align-items: center;
     }
 }
