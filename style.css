@@ -126,34 +126,40 @@ main p{
     background-color: #f8f8f8;
 }
 .skill_lv{
-    display: flex;
+    display: inline-block;
     justify-content: space-between;
     align-items: center;
 }
 
     /* 画像のサイズ合わせ */
 .skill_lv .HTML5 .image img{
-    width: max-content;
+    width: auto;
     height: 250px;
 }
 
 .skill_lv .CSS3 .image img{
-    width: max-content;
-    height: 250px;
+    width: auto;
+    height: 290px;
 }
 
 .skill_lv .Java .image img{
-    width: max-content;
-    height: 250px;
+    width: auto;
+    height: 320px;
 }
 .HTML5, .CSS3, .Java{
+    background-color: white;
+    margin:0px 20px;
+    display:inline-block;
+    vertical-align: middle;
     width:30%;
 }
 .image{
     display: flex;
     justify-content: center;
+    width:auto;
+    height:auto;
 }
-.HTML5, .CSS3, .Java, .SQL{
+.SQL{
     background-color:white;
     margin:0px 20px;
     font-weight:auto;
@@ -166,12 +172,12 @@ main p{
     width:30%;
     margin:30px;
 }
-.skill_lv2 .SQL .image img{
-    width: max-content;
-    height: 250px;
-}
 .skill_lv2 .extra{
     text-align: left;
+}
+.skill_lv2 .SQL .image img{
+    width:auto;
+    height:250px;
 }
     /* 星の場所・色つけ */
 .rate{
