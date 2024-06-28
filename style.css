@@ -33,7 +33,7 @@ a:hover{
     align-items: center;
 }
 h2{
-    font-family: 'Srisakdi', cursive;
+    font-family: serif;
     font-size: 100px;
     padding: 10px;
 }
@@ -62,7 +62,7 @@ main{
     height: 100vh;
 }
 h1{
-    font-family: 'Srisakdi', cursive;
+    font-family: serif;
     font-size: 150px;
     text-align: center;
     animation: bigger 3s 1s;
